@@ -1,0 +1,50 @@
+{
+  "name": "@so-xzen/my-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xzen/my-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xzen/my-react/issues"
+  },
+  "homepage": "https://github.com/xzen/my-react#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}
