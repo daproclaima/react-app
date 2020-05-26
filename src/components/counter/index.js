@@ -7,19 +7,28 @@ class Counter extends Component {
 
     // Initial State
     this.state = {
-      count: 0,
+      count: 30,
     };
   }
 
   componentDidMount() {
+    this.interval = setInterval(() => {
+      this.tick();
+    }, 1000);
+  }
+
+  componentDidUpdate() {
     const { count } = this.state;
 
-    setInterval(() => {
-      console.log(count);
-      this.setState({
-        count: count + 1,
-      });
-    }, 1000);
+    if (count === 0) {
+      clearInterval(this.interval);
+    }
+  }
+
+  tick() {
+    this.setState((state) => ({
+      count: state.count - 1,
+    }));
   }
 
   render() {
