@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Header = ({ title }) => (
-  <header>
-    <h1>{title}</h1>
-  </header>
+const Header = () => (
+  <div>
+    <h1 className="display-4">My Movies</h1>
+  </div>
 );
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Header;

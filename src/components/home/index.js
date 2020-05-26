@@ -1,26 +1,43 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
+import initalState from './initial-state';
 
 import Header from './header';
-import Content from './content';
+import Navigation from './navigation';
+import ListMovies from './list-movies';
 
 class Home extends Component {
   constructor() {
     super();
 
-    // Initial State
-    this.state = {
-      title: 'Counter',
-    };
+    this.state = initalState;
   }
 
   render() {
-    const { title } = this.state;
+    const { title, data } = this.state;
 
     return (
-      <div>
-        <Header title={title} />
-        <Content />
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <Header title={title} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Navigation />
+          </Col>
+        </Row>
+        <Row>
+          <Col xl={9}>
+            <ListMovies data={data} />
+          </Col>
+          <Col xl={3}>
+            <h1>Login</h1>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
