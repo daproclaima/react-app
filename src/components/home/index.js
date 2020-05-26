@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import Footer from './footer';
 import Header from './header';
 import Content from './content';
 
@@ -10,18 +9,17 @@ class Home extends Component {
 
     // Initial State
     this.state = {
-      textHeader: null,
+      title: 'Counter',
     };
   }
 
   render() {
-    const { textHeader } = this.state;
+    const { title } = this.state;
 
     return (
       <div>
-        <Header text={textHeader || 'hello'} />
+        <Header title={title} />
         <Content />
-        <Footer />
       </div>
     );
   }

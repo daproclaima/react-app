@@ -1,8 +1,9 @@
 import React from 'react';
+import Counter from '../counter';
 
 const Content = () => (
   <main>
-    <p>Content</p>
+    <Counter />
   </main>
 );
 
