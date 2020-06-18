@@ -10,6 +10,12 @@ const Navigation = () => (
       <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
+    <Form inline>
+      <Button variant="primary">Movies</Button>
+      <Button variant="primary">Series</Button>
+      <FormControl type="text" idName="nav-search" placeholder="Search" className="mr-sm-2" />
+      <Button type="submit" variant="outline-success">Search</Button>
+    </Form>
   </Navbar>
 );
 
